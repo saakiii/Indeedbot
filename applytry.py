@@ -9,7 +9,8 @@ from config import *
 options = Options()
 options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36")
 
-driver = webdriver.Chrome('chromedriver', options = options)
+chromedriver_path = "/Users/saakin/Downloads/chromedriver-mac-arm64/chromedriver"
+driver = webdriver.Chrome(chromedriver_path, options = options)
 driver.get("https://www.indeed.com/account/login")
 
 input("Press Enter when you have successfully logged in and searched for a job title:\n")
