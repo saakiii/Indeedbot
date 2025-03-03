@@ -9,7 +9,7 @@ from config import *
 options = Options()
 options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36")
 
-chromedriver_path = "/Users/saakin/Downloads/chromedriver-mac-arm64/chromedriver"
+chromedriver_path = "Your-CHROMEDRIVEPATH"
 driver = webdriver.Chrome(chromedriver_path, options = options)
 driver.get("https://www.indeed.com/account/login")
 
